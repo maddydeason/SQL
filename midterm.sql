@@ -69,5 +69,5 @@ group by state, fscale with rollup;
 
 select if(length>1, "long", "short") as len, count(*)
 from tornados
-where fatalities > 1
+where fatalities >= 1
 group by len;
